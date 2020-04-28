@@ -1,9 +1,10 @@
 import React from 'react';
+import StyledPlaylistHeader from './styles/StyledPlaylistHeader';
 
 const PlaylistHeader = props => (
-  <div>
+  <StyledPlaylistHeader>
     PlaylistHeader!
-  </div>
+  </StyledPlaylistHeader>
 );
 
 export default PlaylistHeader;
