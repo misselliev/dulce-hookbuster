@@ -23,13 +23,33 @@ const themeLight = {
   borderPlayed: 'none',
   color: '#353535',
 };
-const WoofPlayer = (props) => (
-  <ThemeProvider theme={state.nightMode ? theme : themeLight}>
-    <StyledWoofPlayer>
-      <Video />
-      <Playlist />
-    </StyledWoofPlayer>
-  </ThemeProvider>
-);
+const WoofPlayer = (props) => {
+  const nightModeCallback = () => {};
+  const endCallback = () => {};
+  const progressCallback = () => {};
+
+
+  return (
+    <ThemeProvider theme={state.nightMode ? theme : themeLight}>
+      {state.videos !== null ? (
+        <StyledWoofPlayer>
+          <Video
+            active={state.active}
+            autoplay={state.autoplay}
+            endCallback={endCallback}
+            progressCallback={progressCallback}
+          />
+          <Playlist
+            videos={state.videos}
+            active={state.activeVideo}
+            nightModeCallback={nightModeCallback}
+            nightMode={state.nightMode}
+          />
+        </StyledWoofPlayer>
+      ) : null}
+      ;
+    </ThemeProvider>
+  );
+};
 
 export default WoofPlayer;
