@@ -8,7 +8,7 @@ const App = () => (
     <>
       <Switch>
         <Route exact path="/" component={WoofPlayer} />
-        <Route exact path="/:activevideo" component={WoofPlayer} />
+        <Route exact path="/:activeVideo" component={WoofPlayer} />
       </Switch>
       <GlobalStyle />
     </>

@@ -11,7 +11,6 @@ const PlaylistHeader = ({ active, total }) => (
       /
       {total}
     </StyledJourney>
-    PlaylistHeader!
   </StyledPlaylistHeader>
 );
 

@@ -30,7 +30,7 @@ const StyledPlaylistItem = styled.div`
     border-radius: 50px;
     position: absolute;
     left: 0;
-    top: 19px;
+    /* top: 19px; */
   }
 
   .woof-player__video-nr {
