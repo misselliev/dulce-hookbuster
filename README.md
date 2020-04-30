@@ -10,7 +10,7 @@ Responsive web video player built using functional components, Reach hooks with 
 
 ## ✨ Live Demo
 
-You can look at it [here]() //Coming soon!.
+You can look at it [here](https://dulce-hookbuster.herokuapp.com/).
 
 
 ## 🚀 Getting Started
